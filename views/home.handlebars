@@ -1,0 +1,21 @@
+<h1>Faça o seu cadastro</h1>
+<form class="form" action="/users/register" method="POST">
+  <div>
+    <label for="">nome</label>
+    <input type="text" name="name">
+  </div>
+  <div>
+    <label for="">email</label>
+    <input type="email" name="email">
+  </div>
+  <input type="submit" value="Cadastrar">
+</form>
+
+{{#each users}}
+  <div>
+    {{this.id}} - {{this.name}} - {{this.email}} - 
+    <a href="/users/select/{{this.id}}">[detalhes]</a>
+    <a href="/users/remove/{{this.id}}">[excluir]</a>
+    <a href="/users/edit/{{this.id}}">[editar]</a>
+  </div>
+{{/each}}
