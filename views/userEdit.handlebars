@@ -1,12 +1,14 @@
-<form action="/users/edit" method="POST">
-  <input type="hidden" name="id" value="{{user.id}}">
-  <div>
-    <label for="">nome</label>
-    <input type="text" name="name" value="{{user.name}}">
-  </div>
-  <div>
-    <label for="">email</label>
-    <input type="email" name="email" value="{{user.email}}">
-  </div>
-  <button type="submit">Salvar</button>
-</form>
+<section class="edit">
+  <form action="/users/edit" method="POST">
+    <input type="hidden" name="id" value="{{user.id}}">
+    <div>
+      <label for="">nome</label>
+      <input type="text" name="name" value="{{user.name}}">
+    </div>
+    <div>
+      <label for="">email</label>
+      <input type="email" name="email" value="{{user.email}}">
+    </div>
+    <button type="submit">Salvar</button>
+  </form>
+</section>

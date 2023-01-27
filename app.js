@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
   conn.query(sql, (err, data) => {
     const users = data
-    res.render('home', { users })
+    res.render('users', { users })
   })
 })
 
@@ -37,21 +37,6 @@ app.post('/users/register', (req, res) => {
   })
 })
 
-app.get('/users/select/:id', (req, res) => {
-  const id = req.params.id
-
-  const sql = `SELECT * FROM users WHERE ?? = ?`
-  const data = ['id', id]
-
-  conn.query(sql, data, (err, result) => {
-    if (err) {
-      console.log(err)
-    }
-
-    const user = result[0]
-    res.render('user', { user })
-  })
-})
 
 app.get('/users/remove/:id', (req, res) => {
   const id = req.params.id

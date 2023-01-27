@@ -1,0 +1,25 @@
+<section class="register">
+  <h2>Cadastrar usuário</h2>
+  <form class="form" action="/users/register" method="POST">
+    <div class="row">
+      <input type="text" name="name" placeholder="name">
+    </div>
+    <div class="row">
+      <input type="email" name="email" placeholder="email@email.com">
+    </div>
+    <input type="submit" value="Cadastrar">
+  </form>
+</section>
+<section class="list">
+  {{#each users}}
+  <div class="list-table">
+    <div>#{{this.id}}</div>
+    <div>{{this.name}}</div>
+    <div>{{this.email}}</div>
+    <div class="actions">
+      <a class="remove" href="/users/remove/{{this.id}}">excluir</a>
+      <a class="edit" href="/users/edit/{{this.id}}">editar</a>
+    </div>
+  </div>
+  {{/each}}
+</section>

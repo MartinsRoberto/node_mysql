@@ -1,0 +1,101 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+}
+
+h1{
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.register{
+  width: 1200px;
+  margin: 50px auto;
+}
+
+.register h2{
+  margin-bottom: 10px;
+}
+
+.register form{
+  display: flex;
+
+}
+
+.register input{
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid silver;
+}
+
+.list{
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.list-table{
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 4fr;
+}
+
+.list-table div{
+  border: 2px solid silver;
+  padding: 10px;
+}
+
+.list-table .actions{
+  text-align: center;
+}
+
+.list-table .actions a{
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.list-table .actions a:hover{
+  text-decoration: underline;
+}
+
+.edit{
+  width: 500px;
+  margin: 50px auto;
+}
+
+.edit label{
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  display: block;
+}
+.edit input{
+  display: block;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid silver;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.edit button{
+  padding: 10px 20px;
+  border: none;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  background-color: silver;
+  font-weight: bold;
+}
+
+.edit button:hover{
+  background-color: gray;
+}
